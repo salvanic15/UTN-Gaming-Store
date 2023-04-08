@@ -38,4 +38,3 @@ function actualizarCarrito() {
     carritoElemento.appendChild(productoElemento);
   });
 }
-
