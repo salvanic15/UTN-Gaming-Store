@@ -1,8 +1,39 @@
+const tiendaLink = document.querySelector("#tienda-link");
+const loginLink = document.querySelector("#login-link");
+const aboutLink = document.querySelector("#about-link");
+const tiendaSection = document.querySelector("#tienda-section");
+const loginSection = document.querySelector("#login-section");
+const aboutSection = document.querySelector("#about-section");
+
+
+aboutLink.addEventListener("click", (event) => {
+  event.preventDefault();
+  aboutSection.style.display = "block";
+  loginSection.style.display = "none";
+  tiendaSection.style.display = "none";
+});
+
+
+tiendaLink.addEventListener("click", (event) => {
+  event.preventDefault();
+  tiendaSection.style.display = "block";
+  loginSection.style.display = "none";
+  aboutSection.style.display = "none";
+});
+
+loginLink.addEventListener("click", (event) => {
+  event.preventDefault();
+  tiendaSection.style.display = "none";
+  aboutSection.style.display = "none";
+  loginSection.style.display = "block";
+});
+
+
 // Crea un objeto carrito vacío
 let carrito = [];
 
 // Obtiene todos los botones "Suscribirse"
-let botonesSuscribirse = document.querySelectorAll("button");
+let botonesSuscribirse = document.querySelectorAll("botonsusc");
 
 // Agrega un evento click a cada botón "Suscribirse"
 botonesSuscribirse.forEach((boton) => {
@@ -38,3 +69,4 @@ function actualizarCarrito() {
     carritoElemento.appendChild(productoElemento);
   });
 }
+

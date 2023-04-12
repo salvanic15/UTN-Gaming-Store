@@ -5,88 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation | Welcome</title>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
-
   </head>
   <body>
 
     <!-- nav Bar -->
     <nav>
+      <img id="logo" src="./assets/logo.gif" alt="logo">  
       <ul>
-        <li><a href="#">Tienda</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">Inciar Sesion</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#" id="tienda-link">Tienda</a></li>
+        <li><a href="#" id="about-link">Acerca de</a></li>
+        <li><a href="#" id="login-link">Login</a></li>
       </ul>
     </nav>
+   
     <!-- fin nav Bar -->
 
     <section class="slider">
      <section>
-        <img src="../UTN/assets/argentina 8 bit.jpg" alt="Imagen 1">
-        <img src="../UTN/assets/evans remains.jpg" alt="Imagen 2">
-        <img src="../UTN/assets/okhlos.jpg" alt="Imagen 3">
-        <img src="../UTN/assets/madison.jpg" alt="Imagen 4">
+        <img src="./assets/argentina 8 bit.jpg" alt="Imagen 1">
+        <img src="./assets/evans remains.jpg" alt="Imagen 2">
+        <img src="./assets/okhlos.jpg" alt="Imagen 3">
+        <img src="./assets/madison.jpg" alt="Imagen 4">
         </section>
     </section>
 
     <!-- fin de slide de imagenes -->
-    <h1>Juegos agregados esta semana:</h1>
-   <!-- carrito -->
+
+    <!-- carrito -->
     <div id="carrito">
       <h2>Carrito</h2>
       <div id="carrito-contenido"></div>
     </div>
 
  <!-- Tienda -->
+
+
+ <div id="tienda-section">
+  <div class="tarjetas">
     <div class="producto">
-      <img src="../UTN/assets/argentina 8 bit.jpg" alt="Producto 1" width="100%" height="60%">
+      <img src="./assets/argentina 8 bit.jpg" alt="Producto 1" width="100%" height="60%">
       <h2>Argentina 8Bit</h2>
       <p>Suscripcion lite: $150</p>
-      <button>Suscribirse</button>
+      <button class=" botonsusc">Suscribirse</button>
     </div>
+  </div>
+  <div class="tarjetas">
     <div class="producto">
-      <img src="../UTN/assets/darkestville castle.jpg" alt="Producto 2" width="100%" height="60%">
+      <img src="./assets/darkestville castle.jpg" alt="Producto 2" width="100%" height="60%">
       <h2>Darkestvile Castle</h2>
       <p>Suscripcion lite: $200</p>
-      <button>Suscribirse</button>
+      <button class=" botonsusc">Suscribirse</button>
     </div>
+    </div>
+<div class="tarjetas">
     <div class="producto">
-      <img src="../UTN/assets/evans remains.jpg" alt="Producto 3"width="100%" height="60%">
+      <img src="./assets/evans remains.jpg" alt="Producto 3"width="100%" height="60%">
       <h2>Evans remains</h2>
       <p>Suscripcion lite: $100</p>
-      <button>Suscribirse</button>
+      <button class=" botonsusc">Suscribirse</button>
     </div>
+  </div>
+<div class="tarjetas">
     <div class="producto">
-      <img src="../UTN/assets/forager.jpg" alt="Producto 4" width="100%" height="60%">
+      <img src="./assets/forager.jpg" alt="Producto 4" width="100%" height="60%">
       <h2>Forager</h2>
       <p>Suscripcion lite: $100</p>
-      <button>Suscribirse</button>
+      <button class=" botonsusc">Suscribirse</button>
     </div>
+  </div>
+<div class="tarjetas">
     <div class="producto">
-      <img src="../UTN/assets/juanito arcade mayhem.jpg" alt="Producto 5" width="100%" height="60%">
+      <img src="./assets/juanito arcade mayhem.jpg" alt="Producto 5" width="100%" height="60%">
       <h2>Juanito Arcade mayhem</h2>
       <p>Suscripcion lite: $100</p>
-      <button>Suscribirse</button>
-    </div>
+      <button class="botonsusc">Suscribirse</button>
+    </div></div>
+<div class="tarjetas">
     <div class="producto">
-      <img src="../UTN/assets/madison.jpg" alt="Producto 6" width="100%" height="70%">
+      <img src="./assets/madison.jpg" alt="Producto 6" width="100%" height="70%">
       <h2>Madison</h2>
       <p>Suscripcion lite: $200</p>
-      <button>Suscribirse</button>
-    </div>
+      <button class="botonsusc">Suscribirse</button>
+    </div></div>
+
+<div class="tarjetas">
     <div class="producto">
-      <img src="../UTN/assets/okhlos.jpg" alt="Producto 7" width="100%" height="60%">
+      <img src="./assets/okhlos.jpg" alt="Producto 7" width="100%" height="60%">
       <h2>Okhlos</h2>
       <p>Suscripcion lite: $250</p>
       <button>Suscribirse</button>
-    </div>
+    </div></div>
+
+    <div class="tarjetas">
     <div class="producto">
-      <img src="../UTN/assets/per aspera.jpg" alt="Producto 8" width="100%" height="60%">
+      <img src="./assets/per aspera.jpg" alt="Producto 8" width="100%" height="60%">
       <h2>Per Aspera</h2>
       <p>Suscripcion lite: $150</p>
       <button>Suscribirse</button>
     </div>
+  </div>
+</div>
+
+
+
+<div id="about-section">
+  <h2>ESTO ES EL ABOUT</h2>
+</div>
+
+
+<div  id="login-section" >
+  <div class="box">
+    <span class="borderLine"></span>
+    <form>
+        <h2>Iniciar sesión</h2>
+        <div class="inputBox">
+            <input type="text" required="required">
+            <span>Usuario</span>
+            <i></i>
+        </div>
+        <div class="inputBox">
+            <input type="password" required="required">
+            <span>Contraseña</span>
+            <i></i>
+        </div>
+        <div class="links">
+            <a href="#">Olvide contraseña</a>
+            <a href="#">Registrarse</a>
+        </div>
+        <input id="inputEntrar" type="submit" value="Entrar">
+    </form>
+</div>
+</div>
 
     <footer>
       <div class="footer-container">
@@ -119,7 +168,6 @@
       </div>
     </footer>
  
-
     <script src="app.js"></script>
   </body>
 </html>
