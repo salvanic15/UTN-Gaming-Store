@@ -1,0 +1,183 @@
+/* Estilos generales Body */
+#body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: rgb(190, 185, 185);
+    box-sizing: border-box;
+  }
+  
+  
+  #logo{
+    background-color: #000000;
+    margin: auto;
+    width: 200px;
+    height: 500%;
+    display: flex;
+    text-align: center;
+  }
+  
+  nav {
+      display: flex;
+      align-items: flex-end;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #000000;
+      z-index: 100;
+    }
+    
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+    
+    nav ul li a {
+      display: block;
+      color: #04b542;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 15px;
+    }
+/*Fin estilos generales Body */
+
+/*Estilos H1 y H2 */
+    
+      #h1 {
+        margin-top: 50px;
+      }
+      #h2 {
+        font-size: 5em;
+      }
+      #h4 {
+        font-size: 5em;
+      }
+     
+     .neon {
+      font-size: 7em;
+      color: #ffffff;
+      text-shadow: 0 0 10px #1eff4e, 0 0 20px #1eff4e, 0 0 80px #1eff4e, 0 0 120px #1eff4e;
+     }
+     
+     .neon{
+      animation: animate .5s linear infinite;
+     }
+     
+     .neo:nth-child(1) {
+      animation-delay: .25s;
+     }
+     
+     .neon:nth-child(2) {
+      animation-delay: .2s;
+     }
+     
+     .neon:nth-child(3) {
+      animation-delay: .35s;
+     }
+     
+     
+     @keyframes animate {
+      0% {
+      opacity: 1;
+      }
+      30% {
+      opacity: 1;
+      }
+      40% {
+      opacity: 0.5;
+      }
+      50% {
+      opacity: 1;
+      }
+      100% {
+      opacity: 1;
+      }
+     }
+
+     /*footer */
+
+  footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin-right: 40px;
+  }
+  
+  .footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .bottom-bar {
+    background-color: #111;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .bottom-bar p {
+    color: #fff;
+    margin: 0;
+  }
+
+  /*Eslitos <p>*/
+
+  .sobreNosotros {
+    
+    border-radius: 30px;
+    background: rgb(27, 27, 27);
+    font-size: 30px;
+    box-shadow: rgba(49, 184, 8, 0.192) 6px 2px 16px 0px, rgba(68, 56, 56, 0.432) -6px -2px 16px 0px;
+    
+  }
+
+  #sobreNosotros {
+
+    margin-top: 40px;
+    margin-bottom: 90px;
+  }
+
+
+  .d-block {
+  border-radius: 20px;
+  box-shadow: rgba(49, 184, 8, 0.192) 6px 2px 16px 0px, rgba(68, 56, 56, 0.432) -6px -2px 16px 0px;
+  
+}
+  
