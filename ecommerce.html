@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation | Welcome</title>
     <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css%22%3E">
   </head>
-  <body>
+  <body id="body">
 
     <!-- nav Bar -->
     <nav>
@@ -31,22 +34,24 @@
 
     <!-- fin de slide de imagenes -->
 
-    <!-- carrito -->
-    <div id="carrito">
-      <h2>Carrito</h2>
-      <div id="carrito-contenido"></div>
-    </div>
+ 
 
  <!-- Tienda -->
 
-
  <div id="tienda-section">
+
+ <div id="carrito">
+  <h2>Carrito</h2>
+  <div id="carrito-contenido"></div>
+</div>
+
+ 
   <div class="tarjetas">
     <div class="producto">
       <img src="./assets/argentina 8 bit.jpg" alt="Producto 1" width="100%" height="60%">
       <h2>Argentina 8Bit</h2>
       <p>Suscripcion lite: $150</p>
-      <button class=" botonsusc">Suscribirse</button>
+      <button>Suscribirse</button>
     </div>
   </div>
   <div class="tarjetas">
@@ -54,7 +59,7 @@
       <img src="./assets/darkestville castle.jpg" alt="Producto 2" width="100%" height="60%">
       <h2>Darkestvile Castle</h2>
       <p>Suscripcion lite: $200</p>
-      <button class=" botonsusc">Suscribirse</button>
+      <button>Suscribirse</button>
     </div>
     </div>
 <div class="tarjetas">
@@ -62,7 +67,7 @@
       <img src="./assets/evans remains.jpg" alt="Producto 3"width="100%" height="60%">
       <h2>Evans remains</h2>
       <p>Suscripcion lite: $100</p>
-      <button class=" botonsusc">Suscribirse</button>
+      <button >Suscribirse</button>
     </div>
   </div>
 <div class="tarjetas">
@@ -70,7 +75,7 @@
       <img src="./assets/forager.jpg" alt="Producto 4" width="100%" height="60%">
       <h2>Forager</h2>
       <p>Suscripcion lite: $100</p>
-      <button class=" botonsusc">Suscribirse</button>
+      <button >Suscribirse</button>
     </div>
   </div>
 <div class="tarjetas">
@@ -78,14 +83,14 @@
       <img src="./assets/juanito arcade mayhem.jpg" alt="Producto 5" width="100%" height="60%">
       <h2>Juanito Arcade mayhem</h2>
       <p>Suscripcion lite: $100</p>
-      <button class="botonsusc">Suscribirse</button>
+      <button >Suscribirse</button>
     </div></div>
 <div class="tarjetas">
     <div class="producto">
-      <img src="./assets/madison.jpg" alt="Producto 6" width="100%" height="70%">
+      <img src="./assets/madison.png" alt="Producto 6" width="100%" height="60%">
       <h2>Madison</h2>
       <p>Suscripcion lite: $200</p>
-      <button class="botonsusc">Suscribirse</button>
+      <button >Suscribirse</button>
     </div></div>
 
 <div class="tarjetas">
@@ -93,7 +98,7 @@
       <img src="./assets/okhlos.jpg" alt="Producto 7" width="100%" height="60%">
       <h2>Okhlos</h2>
       <p>Suscripcion lite: $250</p>
-      <button>Suscribirse</button>
+      <button >Suscribirse</button>
     </div></div>
 
     <div class="tarjetas">
@@ -101,7 +106,7 @@
       <img src="./assets/per aspera.jpg" alt="Producto 8" width="100%" height="60%">
       <h2>Per Aspera</h2>
       <p>Suscripcion lite: $150</p>
-      <button>Suscribirse</button>
+      <button >Suscribirse</button>
     </div>
   </div>
 </div>
@@ -109,10 +114,144 @@
 
 
 <div id="about-section">
-  <h2>ESTO ES EL ABOUT</h2>
+  <div class="container-fluid p-5">
+    <div class="row">
+      <h1 id="h1" class="col-sm-12-md text-center neon p-5">SOBRE NOSOTROS:</h1>
+      <div id="sobreNosotros" class="col-12 py- lh-2  sobreNosotros p-2">
+        <p class="text-center">¡Hola! Somos Gabriel Alejandro Gesa, Gisella González, Dario Holzmaister, Micaela Muñoz y Nicolas Peralta.<br> Quisimos crear un Ecommerce Gaming innovador que solucione una problemática en nuestro entorno: la falta de plataformas de crowdfunding para proyectos argentinos y la necesidad de los desarrolladores de exponer sus trabajos, juegos y proyectos.
+                Nuestra tienda combina ambas ideas al permitir que estos se expongan y que los usuarios los jueguen y se suscriban a ellos por precios muy accesibles. Con esto, queremos ayudar a la industria y asegurarnos de que la creatividad de nuestros desarrolladores no se pierda debido a la falta de recursos, siendo así además una herramienta para poner en valor la enorme cantidad y calidad de la capacidad de nuestros programadores y artistas de diseño.</p>
+      </div>
+
+        <div class="text-center">
+              <h2 id="h2" class="col-sm-12 neon py-4">Bocetos del proyecto</h2>
+        </div>
+        <!-- Carrusel de bocetos -->
+        <div id="carrousel" class="row justify-content-center py-2">
+            <div id="carouselExampleFade" class="col-sm-12 col-md-8  carousel slide carousel-fade mt-4">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./multimedia/figjam.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./multimedia/figjam1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./multimedia/figjam2.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                  </div>
+
+        <div class="row justify-content-center">
+          <h4 id="h4" class="col-sm-12 col-md-12 text-center neon py-5">Tecnologías utilizadas en el proyecto:</h4>
+          <img class="img-fluid col-md-1 col-sm-4" src="./multimedia/js.png" alt="">
+          <img class="img-fluid col-md-1 col-sm-4" src="./multimedia/css-3.png" alt="">
+          <img class="img-fluid col-md-1 col-sm-4" src="./multimedia/bootstrap.png" alt="">
+        </div>
+    </div>
+  </div>
+
+
+  <div id="container">
+<div class="row justify-content-center">
+
+    <div class="col-2 card">
+      <div class="contenido">
+        <span></span>
+        <div class="img">
+          <img src="./assets/gabi.jfif" alt="">
+        </div>
+        <h4>Gabriel Gesa</h4>
+        <h6>Software Developer</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, eius!</p>
+      </div>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/gabriel-gesa-9561b8212/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Gabriel9315"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  
+    <div class="col-2 card">
+      <div class="contenido">
+        <span></span>
+        <div class="img">
+          <img src="./assets/gise.jfif" alt="">
+        </div>
+        <h4>Gisella Gonzalez</h4>
+        <h6>Software Developer</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, eius!</p>
+      </div>
+      <div class="links">
+       <a href="https://www.linkedin.com/in/gisella-gkallisti/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+       <a href="https://github.com/GKallisti" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  
+    <div class="col-2 card">
+      <div class="contenido">
+        <span></span>
+        <div class="img">
+          <img src="./assets/mica.jpg" alt="">
+        </div>
+        <h4>Micaela Muñoz</h4>
+        <h6>Software Developer</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, eius!</p>
+      </div>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/micaela-muñoz/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Micaelamo" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  
+    <div class="col-2 card">
+      <div class="contenido">
+        <span></span>
+        <div class="img">
+          <img src="./assets/nico.jpg" alt="">
+        </div>
+        <h4>Nicolas Peralta</h4>
+        <h6>Software Developer</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, eius!</p>
+      </div>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/nicolas-peralta-698104244/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/salvanic15" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  
+    <div class="col-2 card">
+      <div class="contenido">
+        <span></span>
+        <div class="img">
+          <img src="./assets/dario.jpg" alt="">
+        </div>
+        <h4>Dario Holzmaister</h4>
+        <h6>Software Developer</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, eius!</p>
+      </div>
+      <div class="links">
+        <a href="https://www.linkedin.com"> <i class="fa-brands fa-linkedin"> </i></a>
+        <a href="https://github.com/darpro66" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
 </div>
 
 
+
+
+<div id="background">
+<div id="divlogin">
 <div  id="login-section" >
   <div class="box">
     <span class="borderLine"></span>
@@ -136,6 +275,10 @@
     </form>
 </div>
 </div>
+</div>
+</div>
+
+
 
     <footer>
       <div class="footer-container">
@@ -167,7 +310,8 @@
         <p>Derechos Reservados © 2023</p>
       </div>
     </footer>
- 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="app.js"></script>
   </body>
 </html>

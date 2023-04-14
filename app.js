@@ -25,48 +25,63 @@ loginLink.addEventListener("click", (event) => {
   event.preventDefault();
   tiendaSection.style.display = "none";
   aboutSection.style.display = "none";
-  loginSection.style.display = "block";
+  loginSection.style.display = "flex";
+  
+});
+
+function validarFormulario() {
+  const usuario = document.querySelector('input[type="text"]').value;
+  const password = document.querySelector('input[type="password"]').value;
+  const regexEmail = /^\S+@\S+\.\S+$/; 
+
+  
+  if (!regexEmail.test(usuario)) {
+    alert('Ingrese un correo electrónico válido.');
+    return false;
+  }
+
+ 
+  if (password.length < 6 || password.length > 8) {
+    alert('La contraseña debe tener entre 6 y 8 caracteres.');
+    return false;
+  }
+
+ 
+  return true;
+}
+
+document.querySelector('form').addEventListener('submit', (event) => {
+  event.preventDefault();
+  validarFormulario();
 });
 
 
-// Crea un objeto carrito vacío
 let carrito = [];
 
-// Obtiene todos los botones "Suscribirse"
-let botonesSuscribirse = document.querySelectorAll("botonsusc");
-
-// Agrega un evento click a cada botón "Suscribirse"
+let botonesSuscribirse = document.querySelectorAll('button');
 botonesSuscribirse.forEach((boton) => {
   boton.addEventListener("click", () => {
-    // Obtiene el nombre y el precio del producto correspondiente
+    console.log("lalalala")
+    
     let producto = boton.parentNode;
     let nombre = producto.querySelector("h2").innerText;
     let precio = producto.querySelector("p").innerText;
-
-    // Crea un objeto producto con el nombre y el precio
+ 
     let nuevoProducto = { nombre: nombre, precio: precio };
-
-    // Agrega el nuevo producto al carrito
+ 
     carrito.push(nuevoProducto);
-
-    // Actualiza la visualización del carrito
     actualizarCarrito();
   });
 });
 
-// Actualiza la visualización del carrito
+
 function actualizarCarrito() {
-  // Obtiene el elemento del carrito
   let carritoElemento = document.getElementById("carrito");
-
-  // Borra cualquier contenido previo del carrito
   carritoElemento.innerHTML = "";
-
-  // Agrega cada producto al carrito
   carrito.forEach((producto) => {
-    let productoElemento = document.createElement("div");
-    productoElemento.innerText = producto.nombre + " - " + producto.precio;
-    carritoElemento.appendChild(productoElemento);
+  let productoElemento = document.createElement("div");
+  productoElemento.innerText = producto.nombre + " - " + producto.precio;
+  carritoElemento.appendChild(productoElemento);
   });
 }
 
