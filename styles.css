@@ -581,9 +581,9 @@ opacity: 1;
   position: relative;
   width: 250px;
   height: 350px;
-  border-radius: 10px;
-  box-shadow: 2px 3px 5px #161515d3;
-  margin: 40px; 
+  border-radius: 20px;
+  box-shadow: 2px 3px 5px #000000d3;
+  margin: 20px; 
   display: inline-flex;
 }
 
@@ -620,14 +620,14 @@ opacity: 1;
   position: absolute;
   width: 350px;
   height: 200px;
-  background: linear-gradient(to left, #015c02, #1a1a1a);
+  background: linear-gradient(to left, #004802, #1a1a1a);
   transform: rotate(-35deg);
   top: -50px;
   left: -100px;
 }
 
 .card .contenido h4{
-  font-size: 18px;
+  font-size: 19px;
   color: #ffffff;
   margin-bottom: 5px;
 }
@@ -657,6 +657,7 @@ opacity: 1;
   right: 10px;
   top: 15px;
   transition: .5s;
+  color: white;
 }
 
 .card:hover .links{
@@ -670,11 +671,11 @@ opacity: 1;
 
 
 .card .links a:nth-child(1):hover {
-  color: #0307f8
+  color: #04ff3e
 }
 
 .card .links a:nth-child(2):hover {
-  color: #5D277D
+  color: #04ff3e
 }
 
 #burbujascontainer{
