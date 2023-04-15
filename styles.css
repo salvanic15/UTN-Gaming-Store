@@ -529,7 +529,7 @@ box-shadow: rgba(49, 184, 8, 0.192) 6px 2px 16px 0px, rgba(68, 56, 56, 0.432) -6
 }
 
 .neon {
-font-size: 7em;
+font-size: 4em;
 color: #ffffff;
 text-shadow: 0 0 10px #1eff4e, 0 0 20px #1eff4e, 0 0 80px #1eff4e, 0 0 120px #1eff4e;
 }
@@ -577,14 +577,18 @@ opacity: 1;
   box-sizing: border-box;
 }
 
-.card {
+.nosotros{
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
   width: 250px;
   height: 350px;
   border-radius: 20px;
   box-shadow: 2px 3px 5px #000000d3;
-  margin: 20px; 
-  display: inline-flex;
+  margin: 30px; 
+  background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
 }
 
 .card .contenido{
