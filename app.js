@@ -71,6 +71,12 @@ botonesSuscribirse.forEach((boton) => {
  
     carrito.push(nuevoProducto);
     actualizarCarrito();
+    swal.fire({
+      title: "Te has suscrito a " + nombre,
+      text: precio,
+      width: "60%",
+      background: "#000"
+    });
   });
 });
 

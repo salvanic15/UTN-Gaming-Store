@@ -12,7 +12,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 nav {
@@ -54,6 +53,15 @@ nav ul li a {
   padding: 10px 15px;
 }
 
+#tienda-link {
+  color: #04b542;
+}
+#about-link {
+  color: #04b542;
+}
+#login-link {
+  color: #04b542; 
+}
 .slider {
   margin-top: 130px;
   position: relative;
@@ -570,6 +578,7 @@ opacity: 1;
 
 }
 #body {
+  
   margin: 0;
   padding: 0;
   background-color: #000000;
